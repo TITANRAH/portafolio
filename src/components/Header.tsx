@@ -1,14 +1,36 @@
 'use client'
 
-import React from "react";
+import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import { usePathname } from 'next/navigation';
 
 export default function Header(){
+
+  const [header, setHeader] = useState<boolean>(false)
+  // pathname me ayuda a indentificar la ruta en la que estoy 
+  // por ejemplo contacto o por ejemplo projects
+  const pathname = usePathname()
+
+  useEffect(()=> {
+      const scrollyPos = window.addEventListener('scroll', ()=> {
+        window.scrollY > 50 ? setHeader(true) : setHeader(false)
+      })
+
+      return ()=> window.removeEventListener('scroll', scrollyPos!)
+  })
+
+  console.log(pathname);
+  
   return (
-    <header>
+
+    // defino un limite de scroll en el useeffect si este limite es mayor a 50 
+    // envia un true a la variavble header del useState 
+    // y en el html si es true header envia las clases para pintar el header si no 
+    // las envia transparanete
+    <header className={`${header ? 'py-4 bg-white shadow-lg dark:bg-accent': 'py-6 dark:bg-transparent'} sticky top-0 z-30 transition-all ${pathname === '/' && 'bg-[#fef9f5]' }`}>
       <div className="container mx-auto">
         <div className=" flex justify-between items-center">
           <Logo />
@@ -18,11 +40,15 @@ export default function Header(){
 
      
 
-            <Nav />
+            <Nav 
+             containerStyles="hidden xl:flex gap-x-8 items-center"
+             linkStyles='relative hover:text-primary transition-all'
+             underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
+             />
             <ThemeToggler />
 
             {/* mobile nav */}
-            <div className="">
+            <div className="xl:hidden">
 
               <MobileNav />
             </div>
