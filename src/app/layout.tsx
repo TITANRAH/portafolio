@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Georgian, Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 
@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 
-const inter = Noto_Sans_Georgian({
+const outfit = Outfit({
   subsets: ["latin"],
   weight: "400"
 });
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning >
-      <body className={inter.className}>
+      <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}

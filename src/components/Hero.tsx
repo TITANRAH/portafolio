@@ -5,11 +5,14 @@ import {
 RiBriefcase4Fill,
 RiTeamFill,
 RiTodoFill,
-RiArrowDownSLine
+RiArrowDownSLine,
+RiAccountBoxLine,
+RiFlagFill
 } from 'react-icons/ri'
 import DevImg from './DevImg';
 import Badge from "./Badge"
 import Socials from "./Socials"
+import imagenDev from '../../public/hero/develop-titan.png';
 
 // components
 
@@ -26,8 +29,8 @@ const Hero = () => {
                 <div className="flex max-w-[600px] flex-col  justify-center mx-auto xl:mx-0  
                 text-center xl:text-left">
                   {/* trackin es el espacio entre letras */}
-                  <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Web Developer</div>
-                  <h1 className="h1 mb-4">Hola, mi nombre es Sergio </h1>
+                  <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Developer Full-Stack & Leader Tech</div>
+                  <h1 className="h1 mb-4">Hola. Soy Sergio </h1>
 
                   <p className="subtitle max-w-[490px] mx-auto xl:mx-0 ">  Esta es una pequeña descripción 
                     de mi mismo sobre lo que hago en mi tiempo libre y a lo que me dedico profesionalmente</p>
@@ -49,8 +52,43 @@ const Hero = () => {
                 </div>
                 {/* image*/}
                 <div className="hidden xl:flex relative">
+                  {/* badge 1  años*/}
+                  <Badge 
+                    icon={<RiBriefcase4Fill/>} 
+                    endCountNum={2} 
+                    badgeText="Años de experiencia"
+                    containerStyle="absolute top-[24%] -left-[5rem]"
+                    />
+
+                    {/* badge 2  proyectos*/}
+
+                    <Badge 
+                    icon={<RiTodoFill/>} 
+                    endCountNum={150} 
+                    badgeText="Proyectos"
+                    startCountText="+"
+                    containerStyle="absolute top-[80%] -left-[1rem]"
+                    />
+                    {/* badge 3 team */}
+
+                    <Badge 
+                    icon={<RiTeamFill/>} 
+                    endCountNum={150} 
+                    badgeText="Clientes"
+                    startCountText="+"
+                    containerStyle="absolute top-[55%] -right-8"
+                    />
+                    {/* badge 4 paises */}
+
+                    <Badge 
+                    icon={<RiFlagFill/>} 
+                    endCountNum={5} 
+                    badgeText="Paises visitados"
+                    
+                    containerStyle="absolute top-[0%] -right-0"
+                    />
                   <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[490px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-                  <DevImg containerStyles="bg-hero_shape  w-[510px] h-[462px] bg-no-repeat relative bg-bottom"/>
+                  <DevImg imgUrl={imagenDev} containerStyles="bg-hero_shape  w-[510px] h-[462px] bg-no-repeat relative bg-bottom"/>
                 </div>
             </div>
                 {/* icon */}

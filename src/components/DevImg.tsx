@@ -1,17 +1,18 @@
-import Image from 'next/image'
-import imagenDev from '../../public/hero/develop-titan.png'
+import Image, { StaticImageData } from 'next/image'
+
 
 interface Props {
   containerStyles: string
+  imgUrl: StaticImageData
 }
 
-const DevImg = ({containerStyles}:Props) => {
+const DevImg = ({containerStyles, imgUrl}:Props) => {
   return (
     <div className={`${containerStyles}`}>
       <Image
-      src={imagenDev}
+       src={imgUrl}
        alt='img dev'
-       className='rounded-full pl-5 ml-10'
+       className='rounded-full pl-5 ml-14'
        height={420}
        width={420}
       />

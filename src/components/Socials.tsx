@@ -39,8 +39,8 @@ const icons: Icon[] = [
 ];
 
 interface Props {
-  containerStyles: string;
-  iconStyles: string;
+  containerStyles?: string;
+  iconStyles?: string;
 }
 
 const Socials = ({ containerStyles, iconStyles }: Props) => {
