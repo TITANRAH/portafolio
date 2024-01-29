@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="flex max-w-[600px] flex-col  justify-center mx-auto xl:mx-0  
                 text-center xl:text-left">
                   {/* trackin es el espacio entre letras */}
-                  <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Developer Full-Stack & Leader Tech</div>
+                  <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Developer Full-Stack & Leader Tech Front-end</div>
                   <h1 className="h1 mb-4">Hola. Soy Sergio </h1>
 
                   <p className="subtitle max-w-[490px] mx-auto xl:mx-0 ">  Esta es una pequeña descripción 
