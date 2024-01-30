@@ -9,7 +9,6 @@ import appMovil from "../../../public/work/appmovil1.jpg";
 import ecommerce from "../../../public/work/ecommerce.jpg";
 import { ProjectCardInterface } from "@/interfaces/project-card";
 
-
 const projectCard: ProjectCardInterface[] = [
   {
     image: adminVet,
@@ -60,6 +59,22 @@ const uniqueCategories: string[] = [
 
 const ProyectsPage = () => {
   const [categories, setCategories] = useState(uniqueCategories);
+  const [categoryDefault, setCategory] = useState("all projects");
+
+  // si la propiedad seteada es igual a all project mandame los proyectos todos si no
+  // mandame proyectos por categoria
+  // y al abrir el componente el valor designado es all projects como se ve 
+  // en el use state 
+  // y como abajo estoy mapeando el filteredProjects lo primero que se veran 
+  // son todos los proyectos
+  const filteredProjects = projectCard.filter((project) => {
+    return categoryDefault == "all projects"
+      ? project
+      : project.category == categoryDefault;
+  });
+  // console.log(categoryDefault);
+  console.log("filtrados", filteredProjects);
+
   return (
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
@@ -68,15 +83,34 @@ const ProyectsPage = () => {
         </h2>
         {/* tabs */}
 
-        <Tabs>
-          <TabsList>
-            {categories.map((category, index)=> {
+        <Tabs defaultValue={categoryDefault} className="mb-24 xl:mb-48 ">
+          <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
+            {categories.map((category, index) => {
               return (
-                <TabsTrigger className="w-[170px] xl:w-auto">{category}</TabsTrigger>
-              )
+                <TabsTrigger
+                  onClick={() => setCategory(category)}
+                  key={index}
+                  value={category}
+                  className="capitalize w-[162px] md:w-auto"
+                >
+                  {category}
+                </TabsTrigger>
+              );
             })}
           </TabsList>
+          {/* tabs content */}
+          <div className="text-lg xl:mt-8 grid grid-cols-1 gap-x-2 lg:grid-cols-3">
+            {
+              filteredProjects.map((project, index) => {
+                return (
+                  <TabsContent value={categoryDefault} key={index}>
+                    <ProjectCard proyect={project}/>
+                  </TabsContent>
+                )
+              })
+            }
 
+          </div>
         </Tabs>
       </div>
     </section>
