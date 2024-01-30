@@ -14,6 +14,7 @@ import Badge from "./Badge"
 import Socials from "./Socials"
 import imagenDev from '../../public/hero/develop-titan.png';
 
+
 // components
 
 
@@ -39,7 +40,10 @@ const Hero = () => {
                     <Link href={'/contact'}>
                         <Button className="gap-x-2">Contáctame<Send size={18}/> </Button>
                     </Link>
+                    <Link href={''} download={''}>
+                    
                     <Button variant='secondary' className="gap-x-2 text-white">Descarga mi CV<Download size={18}/> </Button>
+                    </Link>
 
                   </div>
 

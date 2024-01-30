@@ -9,8 +9,8 @@ const Logo = () => {
     <Link href='/'>
       <Image
         src={logo}
-        width={54}
-        height={54}
+        width={110}
+        height={110}
         priority
         alt='logo'
       />
