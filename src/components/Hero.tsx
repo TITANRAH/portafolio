@@ -18,7 +18,7 @@ import imagenDev from "../../public/hero/develop-titan.png";
 
 const Hero = () => {
   const urlCV =
-    "https://github.com/TITANRAH/portafolio/blob/master/public/curriculum.pdf";
+    "https://drive.google.com/file/d/1xcZLibg_C90Ts-soaqeGBt8N7ey-R9R6/view?usp=sharing";
   return (
     // declare el bg-hero en tailwind config para poder usarlo
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-cover bg-bottom dark:bg-none">
@@ -48,7 +48,7 @@ const Hero = () => {
                   <Send size={18} />{" "}
                 </Button>
               </Link>
-              <Link href={urlCV} download={urlCV}>
+              <Link href={urlCV} download={'https://drive.google.com/file/d/1xcZLibg_C90Ts-soaqeGBt8N7ey-R9R6/view?usp=sharing'}>
                 <Button variant="secondary" className="gap-x-2 text-white">
                   Descarga mi CV <Download size={18} />
                 </Button>
