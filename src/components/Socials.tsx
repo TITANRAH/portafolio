@@ -6,6 +6,7 @@ import {
   RiGithubFill,
   RiFacebookFill,
   RiInstagramFill,
+  RiSpotifyFill,
 } from "react-icons/ri";
 
 import Link from "next/link";
@@ -17,24 +18,28 @@ interface Icon {
 
 const icons: Icon[] = [
   {
-    path: "/",
+    path: "https://www.youtube.com/@GranRah",
     icon: <RiYoutubeFill />,
   },
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/titan-dev/",
     icon: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/TITANRAH",
     icon: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: "https://facebook.com/GranRah1",
     icon: <RiFacebookFill />,
   },
   {
-    path: "/",
+    path: "https://instagram.com/granrah",
     icon: <RiInstagramFill />,
+  },
+  {
+    path: "https://open.spotify.com/intl-es/artist/6JjrF0EnCW3Ylj9gj3FXWZ?si=32ZNKFtiQ4qE-2Ccqns6JQ&nd=1&dlsi=c47e65f68518414a",
+    icon: <RiSpotifyFill />,
   },
 ];
 

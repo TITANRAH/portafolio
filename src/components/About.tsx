@@ -83,7 +83,7 @@ const qualificationData: QualificationData[] = [
       },
       {
         university: "Desafío Latam",
-        qualificacion: "Full-Stack MERN",
+        qualificacion: "Full-Stack PERN",
         years: "2021 - 2022",
       },
     ],
@@ -173,7 +173,7 @@ const About = () => {
   // console.log('entro al console',getData(qualificationData, 'experience' ));
 
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24 xl:max-w-[1380px] m-auto">
+    <section className="mt-[40rem] md:mt-[10rem] xl:h-[860px] pb-12 xl:py-24 xl:max-w-[1380px] m-auto">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           Acerca de mi
@@ -215,8 +215,8 @@ const About = () => {
                   </h3>
                   <p className="subtitle max-w-xl max-auto xl:mx-0">
                     Me especializo en la constante busqueda del conocimiento,
-                    para poder integrarlo en las aplicaciones que me piden dia a
-                    dia, me mantengo al tanto de las nuevas tecnologías, y soy
+                    para poder integrarlo en las aplicaciones que me piden día a
+                    día, me mantengo al tanto de las nuevas tecnologías, y soy
                     incanzable a la hora de aprender.
                   </p>
                   {/* icons */}

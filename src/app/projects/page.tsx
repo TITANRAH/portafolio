@@ -15,7 +15,7 @@ const projectCard: ProjectCardInterface[] = [
     category: "react js",
     name: "admin veterinaria",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, delectus esse? Hic optio ratione minus laboriosam voluptatum iure alias enim recusandae. Cum ab architecto corporis explicabo odio excepturi suscipit voluptatem?",
+      "Administrador para veterinarios permite controlar las atenciones realizadas a las mascotas de los clientes, lo realicé siguiendo un curso de Juan Pablo de la Torre, utilicé React js.",
     link: "",
     github: "",
   },
@@ -24,7 +24,7 @@ const projectCard: ProjectCardInterface[] = [
     category: "next js 14",
     name: "validador de recetas",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, delectus esse? Hic optio ratione minus laboriosam voluptatum iure alias enim recusandae. Cum ab architecto corporis explicabo odio excepturi suscipit voluptatem?",
+      "Validador de recetas fue una solución que necesitaban en mi trabajo, para validar en farmacias las recetas que se generan a través de la plataforma médica proporcionada por la empresa para los usuarios, utilice Next js 14, conectando a una lambda function en AWS y desplegada en Vercel con dominio propio.",
     link: "",
     github: "",
   },
@@ -33,7 +33,7 @@ const projectCard: ProjectCardInterface[] = [
     category: "flutter",
     name: "aplicación movil",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, delectus esse? Hic optio ratione minus laboriosam voluptatum iure alias enim recusandae. Cum ab architecto corporis explicabo odio excepturi suscipit voluptatem?",
+      "Esta app movil fue parte de un proyecto en mi trabajo, que pretendia llevar la plataforma web a un ambiente movil Ios y Android, se realizó una versión con un equipo de trabajo, pero luego la reescribi en solitario optimizando el código usando gestores de estado como Riverpod y Arquitectura Limpia, pese a la reescritura del código ,es la versión anterior la que esta hoy en Producción.",
     link: "",
     github: "",
   },
@@ -42,7 +42,7 @@ const projectCard: ProjectCardInterface[] = [
     category: "next js 14",
     name: "Ecommerce",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, delectus esse? Hic optio ratione minus laboriosam voluptatum iure alias enim recusandae. Cum ab architecto corporis explicabo odio excepturi suscipit voluptatem?",
+      "TesloShop es un curso completo de Ecommerce realizado en Next js 15 dictaminado por Fernando Herrera el cual realicé y me ayudó a obtener bases y más, referente al uso de Typescript, Prisma, Postgress, Docker, Zustand, Zod, React Hook Form, etc. y por supuesto Next js 14.",
     link: "",
     github: "",
   },

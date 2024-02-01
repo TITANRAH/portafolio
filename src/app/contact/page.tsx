@@ -16,10 +16,11 @@ const ContactPage = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Trabajemos juntos</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-              nihil nulla recusandae totam error veniam, accusamus sint quod ex
-              delectus soluta obcaecati. Cumque distinctio doloremque tempora
-              nam sit velit quo.
+             Me encantaría colaborar contigo para hacer realidad tus proyectos.
+             En nuestro compromiso por ofrecer soluciones de calidad, 
+             estamos dispuestos a trabajar codo a codo contigo.
+             Ya sea que necesites asesoramiento, desarrollo de proyectos o 
+             cualquier otra forma de colaboración.
             </p>
           </div>
           {/* info text y form */}

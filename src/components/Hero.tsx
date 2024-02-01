@@ -43,8 +43,18 @@ const Hero = () => {
 
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0 ">
               {" "}
-              Esta es una pequeña descripción de mi mismo sobre lo que hago en
-              mi tiempo libre y a lo que me dedico profesionalmente
+              Me apasiona el mundo del desarrollo, actualmente trabajo en una empresa donde mi rol es ser lider técnico del area front-end. además 
+              mi otra gran pasión es hacer música rap y esto me ha permitido recorrer mi páis y otros paises también.
+              <br/>
+              <br/>
+              Me la paso gran parte de mi tiempo a conocer nuevas herramientas de desarrollo y técnologias nuevas, entre las técnologias que mas me gustan 
+              son Flutter, Vue js, React,  Node js, MongoDb, PostgresSql, Firebase y últimamente Next js 14, la cual utilizo en mi trabajo actual y en la que ralicé este portafolio mientras estudiaba esta técnologia, 
+              este portafolio tiene como valor agregado el uso de TypeScript, React Hoook Form, Zod y lo desplegue en Vercel, por el lado del Backend utilicé Node, Express, Nodemailer y lo desplegue en Railway,
+              esto permite que puedas enviarme mensajes a través del formulario de este portafolio, en donde encontrarás varias app's que he realizado estudiando y otras que he realizado en 
+              mi trabajo. 
+              <br/>
+              <br/>
+              Bienvenido ¡
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-4 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -75,7 +85,8 @@ const Hero = () => {
               icon={<RiBriefcase4Fill />}
               endCountNum={2}
               badgeText="Años de experiencia"
-              containerStyle="absolute top-[24%] -left-[5rem]"
+              startCountText="+"
+              containerStyle="absolute top-[10%] -left-[5rem]"
             />
 
             {/* badge 2  proyectos*/}
@@ -83,18 +94,18 @@ const Hero = () => {
             <Badge
               icon={<RiTodoFill />}
               endCountNum={150}
-              badgeText="Proyectos"
+              badgeText="Visibilidad de Proyectos"
               startCountText="+"
-              containerStyle="absolute top-[80%] -left-[1rem]"
+              containerStyle="absolute top-[45%] -left-[1rem]"
             />
             {/* badge 3 team */}
 
             <Badge
               icon={<RiTeamFill />}
               endCountNum={150}
-              badgeText="Clientes"
+              badgeText="Visibilidad de Clientes"
               startCountText="+"
-              containerStyle="absolute top-[55%] -right-8"
+              containerStyle="absolute top-[40%] -right-8"
             />
             {/* badge 4 paises */}
 
@@ -102,7 +113,7 @@ const Hero = () => {
               icon={<RiFlagFill />}
               endCountNum={5}
               badgeText="Paises visitados"
-              containerStyle="absolute top-[0%] -right-0"
+              containerStyle="absolute top-[2%] -right-0"
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[490px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg

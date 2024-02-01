@@ -23,19 +23,19 @@ const servicesData: ServicesData[] = [
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Front-end Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam non pro pos   posuere elit. Ut enim ad minim veniam et    al. Lorem ipsum dolor sit amet, consectet           dolor sit amet, sed diam non pro posuere elit. Lorem ipsum dolor sit amet, consect ",
+      "Convierto tu visión en experiencias cautivadoras. Desarrollo interfaces intuitivas y atractivas para tu sitio web, optimizando la usabilidad y creando una presencia digital impactante. ¡Haz que tu marca destaque con mi servicio de Front-end!",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Back-end Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam non pro pos   posuere elit. Ut enim ad minim veniam et    al. Lorem ipsum dolor sit amet, consectet           dolor sit amet, sed diam non pro posuere elit. Lorem ipsum dolor sit amet, consect ",
+      "Construyo la columna vertebral de tu sitio web. Desde la gestión de datos hasta la funcionalidad del servidor, desarrollo soluciones robustas y eficientes. Optimizo el rendimiento para una experiencia de usuario fluida.",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: "App Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam non pro pos   posuere elit. Ut enim ad minim veniam et    al. Lorem ipsum dolor sit amet, consectet           dolor sit amet, sed diam non pro posuere elit. Lorem ipsum dolor sit amet, consect ",
+      "Transformo ideas en aplicaciones dinámicas. Desarrollo soluciones móviles intuitivas y eficientes, aprovechando las últimas tecnologías. Desde la conceptualización hasta la implementación, construyo aplicaciones que destacan. ¡Haz que tu visión cobre vida con mi servicio de Desarrollo de Aplicaciones! ",
   },
 ];
 
@@ -51,16 +51,16 @@ const Services = () => {
             return (
               <Card
                 key={index}
-                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                className="w-full max-w-[424px] h-[350px] flex flex-col pt-16 pb-10 justify-center items-center relative"
               >
                 <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                  <div className="w-[140px] bg-white dark:bg-background flex justify-center items-center">
                     {s.icon}
                   </div>
                 </CardHeader>
 
                 <CardContent className="text-center">
-                  <CardTitle className="mb-4 ">{s.title}</CardTitle>
+                  <CardTitle className="mb-4">{s.title}</CardTitle>
                   <CardDescription className="text-lg">{s.description}</CardDescription>
                 </CardContent>
               </Card>
