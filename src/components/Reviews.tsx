@@ -60,7 +60,7 @@ const reviewsData: Reviews[] = [
 
 const Reviews = () => {
   return (
-    <section className="xl:pt-40">
+    <section className="xl:pt-60">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 text-center mx-auto"> Recomendaciones</h2>
         <Swiper
