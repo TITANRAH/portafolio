@@ -94,7 +94,7 @@ const Hero = () => {
             <Badge
               icon={<RiTodoFill />}
               endCountNum={150}
-              badgeText="Visibilidad de Proyectos"
+              badgeText="Visibilidad Proyectos"
               startCountText="+"
               containerStyle="absolute top-[45%] -left-[1rem]"
             />
@@ -103,7 +103,7 @@ const Hero = () => {
             <Badge
               icon={<RiTeamFill />}
               endCountNum={150}
-              badgeText="Visibilidad de Clientes"
+              badgeText="Visibilidad Clientes"
               startCountText="+"
               containerStyle="absolute top-[40%] -right-8"
             />
