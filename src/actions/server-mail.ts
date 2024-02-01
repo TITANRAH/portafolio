@@ -17,14 +17,14 @@ export const sendEmail = async (formData: FormData) => {
 
 
   if (!emailParsed.success) {
-    console.log("cayo en el if de success false");
+    // console.log("cayo en el if de success false");
 
-    console.log(emailParsed.error);
+    // console.log(emailParsed.error);
     return { ok: false, message: emailParsed.error};
   }
 
   const send = emailParsed.data;
-  console.log(data);
+  // console.log(data);
   const endpoint = "mail";
   const mailUrl = `${process.env.NEXT_PUBLIC_URL_MAIL}/${endpoint}`;
 
@@ -43,7 +43,7 @@ export const sendEmail = async (formData: FormData) => {
       ...requestOptions,
       cache: "no-store",
     }).then((r) => r.json());
-    console.log({ result });
+    // console.log({ result });
 
     return result;
   } catch (error) {
