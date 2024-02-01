@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
@@ -13,8 +15,12 @@ import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 import imagenDev from "../../public/hero/develop-titan.png";
+import { sendEmail } from "@/actions/server-mail";
+import { Mail } from "@/interfaces/mail";
 
 // components
+
+
 
 const Hero = () => {
   const urlCV =
