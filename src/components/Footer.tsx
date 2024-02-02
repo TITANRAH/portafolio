@@ -9,7 +9,7 @@ const Footer = () => {
             iconStyles="text-primary dark:text-white/70 text-[20px] hover:text-white dark:hover:text-primary transition-all"
           />
           <div className="text-muted-foreground text-center">
-            Copyright &copy; Sergio Miranda. Todos los derechos reservados
+            Copyright &copy; TitanDev Todos los derechos reservados
           </div>
         </div>
       </div>

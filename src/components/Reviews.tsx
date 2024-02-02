@@ -4,10 +4,10 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import "swiper/css";
 import "swiper/css/pagination";
 import avatar1 from "../../public/reviews/avatar-1.png";
-import avatar2 from "../../public/reviews/avatar-2.png";
-import avatar3 from "../../public/reviews/avatar-3.png";
-import avatar4 from "../../public/reviews/avatar-4.png";
-import avatar5 from "../../public/reviews/avatar-5.png";
+import avatar2 from "../../public/reviews/avatar-2.jpeg";
+import avatar3 from "../../public/reviews/avatar-3.jpeg";
+import avatar4 from "../../public/reviews/avatar-4.jpeg";
+import avatar5 from "../../public/reviews/avatar-5.jpeg";
 
 // import required modules
 import { Pagination } from "swiper/modules";
@@ -24,35 +24,35 @@ const reviewsData: Reviews[] = [
   {
     avatar: avatar1,
     name: "Gabriel Cortés",
-    job: "Tech Lead OlaClick",
+    job: "Tech Lead",
     review:
       "lorem ipsum dolor sit amet, consectetur adip   inc commodo euismod tempor  invidunt ut labore et dolore magna aliqu",
   },
   {
     avatar: avatar2,
-    name: "Gabriel Cortés",
-    job: "Tech Lead OlaClick",
+    name: "Mario Alvarez",
+    job: "Tech Lead UI/UX",
     review:
       "lorem ipsum dolor sit amet, consectetur adip   inc commodo euismod tempor  invidunt ut labore et dolore magna aliqu",
   },
   {
     avatar: avatar3,
-    name: "Gabriel Cortés",
-    job: "Tech Lead OlaClick",
+    name: "Carolina Pulgar",
+    job: "TI Factory Manager & Architect",
     review:
       "lorem ipsum dolor sit amet, consectetur adip   inc commodo euismod tempor  invidunt ut labore et dolore magna aliqu",
   },
   {
     avatar: avatar4,
-    name: "Gabriel Cortés",
-    job: "Tech Lead OlaClick",
+    name: "Gustavo Cortinez",
+    job: "CTO",
     review:
       "lorem ipsum dolor sit amet, consectetur adip   inc commodo euismod tempor  invidunt ut labore et dolore magna aliqu",
   },
   {
     avatar: avatar5,
-    name: "Gabriel Cortés",
-    job: "Tech Lead OlaClick",
+    name: "Consuelo Cifuentes",
+    job: "Gerente de Operaciones",
     review:
       "lorem ipsum dolor sit amet, consectetur adip   inc commodo euismod tempor  invidunt ut labore et dolore magna aliqu",
   },

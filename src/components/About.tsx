@@ -29,10 +29,10 @@ const infoData: InfoData[] = [
     icon: <User2 size={20} />,
     text: "Sergio Miranda",
   },
-  {
-    icon: <PhoneCall size={20} />,
-    text: "+5695555555",
-  },
+  // {
+  //   icon: <PhoneCall size={20} />,
+  //   text: "+5695555555",
+  // },
   {
     icon: <MailIcon size={20} />,
     text: "titanrah@gmail.com",
@@ -225,7 +225,7 @@ const About = () => {
                       return (
                         <div
                           key={index}
-                          className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                          className="flex items-start gap-x-4 mx-auto xl:mx-0"
                         >
                           <div className="text-primary ">{i.icon}</div>
                           <div>{i.text}</div>

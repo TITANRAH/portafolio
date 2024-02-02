@@ -16,11 +16,13 @@ const ContactPage = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Trabajemos juntos</h1>
             <p className="subtitle max-w-[400px]">
-             Me encantaría colaborar contigo para hacer realidad tus proyectos.
-             En nuestro compromiso por ofrecer soluciones de calidad, 
-             estamos dispuestos a trabajar codo a codo contigo.
-             Ya sea que necesites asesoramiento, desarrollo de proyectos o 
-             cualquier otra forma de colaboración.
+           
+Me encantaría colaborar contigo para 
+hacer realidad nuestros proyectos. El compromiso
+ es ofrecer soluciones de calidad, 
+estoy dispuestos a trabajar codo a codo. 
+Ya sea que necesitemos asesoramiento, 
+desarrollo de proyectos o cualquier otra forma de colaboración.
             </p>
           </div>
           {/* info text y form */}
@@ -44,10 +46,10 @@ const ContactPage = () => {
               <div>Puente Alto, Santiago, Chile</div>
             </div>
             {/* phone */}
-            <div className="flex items-center gap-x-8">
+            {/* <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary"/>
               <div>+569455555555</div>
-            </div>
+            </div> */}
           </div>
 
         <Form/>
